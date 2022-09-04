@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    background-color: white;
+}
+ul{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    font-weight: 300;
+    
+   
+}
+li a:hover, li a:active{
+    /* text-decoration: underline;
+    text-decoration-color: blue; */
+    content: '';
+    height: 2px;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    transition:  0.3s;
+    
+    }
+
+
+/* STICKY */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+/* BODY SECTION */
+.container{
+    display: grid;
+    grid-template-rows: (6 1fr) ;
+    padding-top: 90px;
+    color: white;
+    background-color: #010E1B;
+  }
+  .container >div{
+    border: 1px solid black;
+    min-height: 200px;
+  }
+  /* INTRO SECTION */
+  .intro{
+    display: flex;
+    justify-content: space-around;
+  }
+.intro-text h1{
+    font-size: 80px;
+    line-height: 130px;
+}
+
+#text {
+	display: inline-block;
+    font-size: 37px;
+	letter-spacing: 4px;
+    font-weight: 700;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: black;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: orange; 
+	}
+} 
+
+.btn{
+    margin-top: 60px;
+    height: 60px;
+    width: 170px;
+    background-color: #12D640;
+    border-radius: 15px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+   
+}
+.intro-img{
+border: 2px solid white;
+height: 600px;
+width: 50%;
+border-radius: 50%;
+}
+.intro-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    border-radius: 50%;
+}
