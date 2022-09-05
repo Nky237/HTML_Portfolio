@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 
 }
 nav{
@@ -62,6 +64,7 @@ li a:hover, li a:active{
   .intro{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 .intro-text h1{
     font-size: 80px;
@@ -106,6 +109,22 @@ li a:hover, li a:active{
     font-size: 18px;
    
 }
+.icon{
+    padding-top: 20px;
+}
+.icon a{
+    text-decoration: none;
+ 
+}
+.icon i{
+    font-size: 34px;
+    color: white;
+    padding: 3px 10px;
+    transition: 0.5s;
+}
+.icon i:hover{
+    background-color: #12D640;
+}
 .intro-img{
 border: 2px solid white;
 height: 600px;
@@ -117,4 +136,190 @@ border-radius: 50%;
     object-fit: cover;
     height: 600px;
     border-radius: 50%;
+}
+#about, #skill, #service{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+#about p, #skill p, #service p{
+    line-height: 37px;
+}
+/* ABOUT SECTION */
+#about, #service {
+   background-color: white;
+    color: black;
+    width: 100%;
+    
+}
+#about h1, .skill-title h1, .service-title h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 33px;
+    padding-bottom: 60px;
+    color: #12D640;
+}
+.about-title, .skill-title, .service-title{
+    position: relative;
+}
+.about-title:before, .skill-title:before, .service-title:before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 190px;
+    height: 4px;
+    background: #12D640;
+    transform: translateX(-50%);
+}
+
+.about-title:after, .skill-title:after, .service-title:after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #12D640;
+    transform: translateX(-50%);
+
+}
+
+.about-body{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.about-pic{
+    border: 1px solid black;
+    height: 400px;
+    width: 40%;
+    border-radius: 20px;
+}
+.about-text{
+    width: 40%;
+}
+
+/* SKILL SECTION */
+.skill-body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill-text{
+    width: 40%;
+}
+.skill-pic{
+    width: 40%;
+}
+.bar {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.bar .info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+.bar .line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #999999;
+    border-radius: 2px;
+}
+
+.bar .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.bar .html::before {
+    width: 95%;
+    background: #e45126;
+}
+
+.bar .css::before {
+    width: 85%;
+    background: #0c73b8;
+}
+
+.bar .javascript::before {
+    width: 80%;
+    background: #e3a324;
+}
+.bar .bootstrap::before{
+    width: 80%;
+    background-color: #12D640;
+}
+.bar .React::before{
+    width: 50%;
+    background-color: blueviolet;
+}
+.bar .python::before{
+    width: 50%;
+    background-color: blueviolet;
+}
+.bar .Github::before{
+    width: 90%;
+    background-color: #12D640;
+}
+.bar .Tailwind::before{
+    width: 70%;
+    background-color: brown;
+}
+
+/* SERVICES */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.content .card {
+    background: #fff;
+    width: 340px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(1 1 1 / 15%);
+}
+
+.content .card .service-icon {
+    color: #12D640;
+    font-size: 2em;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.content .card:hover .service-icon {
+    transform: translateY(-40px);
+}
+
+.content .card .info {
+    text-align: center;
+}
+
+.content .card .info h3 {
+    color: #12D640;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
