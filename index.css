@@ -450,7 +450,6 @@ footer{
 /* INTRO */
 .intro-text{
     padding-top: 100px;
-    z-index: 1000;
 }
 .intro-img{
     width: 90%;
