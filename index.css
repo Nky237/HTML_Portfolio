@@ -417,7 +417,10 @@ footer{
 
 /* Nav bar */
 @media only screen and (max-width:500px){
-.harmburger{
+body{
+    overflow-x: hidden;
+}
+    .harmburger{
     display: block;
 }
 .harmburger i{
