@@ -64,9 +64,10 @@ li a:hover, li a:active{
     padding-top: 90px;
     color: white;
     background-color: #010E1B;
+    width: 100%;
   }
   .container >div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     min-height: 200px;
   }
   /* INTRO SECTION */
@@ -135,7 +136,7 @@ li a:hover, li a:active{
     background-color: #12D640;
 }
 .intro-img{
-border: 2px solid white;
+/* border: 2px solid white; */
 height: 600px;
 width: 50%;
 border-radius: 50%;
@@ -485,4 +486,16 @@ body{
 .skill-pic{
     margin-top: 30px;
 }
+}
+@media only screen and (max-width:400px){
+  body{
+    overflow-x: hidden;
+  } 
+  .container{
+    background-color: white;
+  }
+  footer,.intro, #skill {
+    background-color: #010E1B;
+    width: 100%;
+  } 
 }
