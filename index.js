@@ -1,5 +1,5 @@
-// FOR THE STICK NAV MENU
 
+// FOR THE STICK NAV MENU
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -90,3 +90,21 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
+
+
+
+
+
+// RESPONSIVE NAV MENU
+const Navy = document.querySelector('.nav-menu')
+const Ham = document.querySelector('.harmburger')
+const Linky = document.querySelectorAll('.nav-link')
+
+	Ham.addEventListener("click", ()=>{
+	Navy.classList.toggle("active")
+	Ham.classList.toggle("active")
+})
+Linky.forEach(n=> n.addEventListener('click', ()=>{
+	Navy.classList.remove("active")
+	Ham.classList.remove("active")
+}))

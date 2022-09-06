@@ -21,13 +21,16 @@
     <!-- NAVIGATION BAR -->
     <nav id="navbar">
         <div class="logo"><h1>JHENNA</h1></div>
-    <ul>
-        <li><a href="">Home</a> </li>
-        <li><a href="">About</a> </li>
-        <li><a href="">Skills</a> </li>
-        <li><a href="">Works</a> </li>
-        <li><a href="">Contacts</a> </li>
+    <ul class="nav-menu">
+        <li class="nav-link"><a href="">Home</a> </li>
+        <li class="nav-link"><a href="">About</a> </li>
+        <li class="nav-link"><a href="">Skills</a> </li>
+        <li class="nav-link"><a href="">Works</a> </li>
+        <li class="nav-link"><a href="">Contacts</a> </li>
     </ul>
+    <div class="harmburger">
+        <i class="fa fa-bars"></i>
+    </div>
 </nav>
 
 
@@ -57,7 +60,9 @@
         <h1>About Me</h1>
     </div>
        <div class="about-body">
-        <div class="about-pic"></div>
+        <div class="about-pic">
+            <lottie-player src="./images/118043-data-analytics-techniques.json" background="transparent"  speed="1"  style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+        </div>
         <div class="about-text">
             <h2>Hey There! I'm Jane</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloremque modi eaque magnam facere voluptates repudiandae, maxime provident quos dicta vero possimus
@@ -254,5 +259,7 @@
   
   
 <script src="./index.js"></script>
+<!-- lottie file -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body> 
 </html>

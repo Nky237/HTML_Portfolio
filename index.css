@@ -41,7 +41,15 @@ li a:hover, li a:active{
     transition:  0.3s;
     
     }
-
+.harmburger{
+    display: none;
+    cursor: pointer;
+}
+.harmburger i{
+    -webkit-transition: all 0.3s ease-in-out ;
+    transition: all 0.9s ease-in-out;
+    color: #010E1B;
+}
 
 /* STICKY */
 .sticky {
@@ -195,10 +203,10 @@ border-radius: 50%;
     
 }
 .about-pic{
-    border: 1px solid black;
     height: 400px;
     width: 40%;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .about-text{
     width: 40%;
@@ -409,8 +417,46 @@ footer{
 
 /* Nav bar */
 @media only screen and (max-width:500px){
-/* ABOUT */
+.harmburger{
+    display: block;
+}
+.harmburger i{
+    font-size: 37px;
+}
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #010E1B;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    
+    
 
+}
+.nav-menu li a{
+    color: white;
+}
+.nav-menu li{
+    margin: 10px 0;
+}
+.nav-menu.active{
+    left: 0;
+
+}
+/* INTRO */
+.intro-text{
+    padding-top: 100px;
+    z-index: 1000;
+}
+.intro-img{
+    width: 90%;
+    margin-top: 30px;
+}
+/* ABOUT */
 .about-body{
     display: flex;
     flex-direction: column;
