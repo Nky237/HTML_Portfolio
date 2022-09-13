@@ -21,10 +21,10 @@ function myFunction() {
 // FOR THE BLINKING EFFECT
 // List of sentences
 var _CONTENT = [ 
-	"I am a front-end developer", 
-	"I am a backend developer", 
+	"A front-end developer", 
+	"A backend developer", 
 	"Aspiring data analyst", 
-	"I am an Electronic Engineer"
+	"An Electronic Engineer"
 ];
 
 // Current sentence being processed
