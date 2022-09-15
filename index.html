@@ -7,12 +7,8 @@
     <title>Document</title>
     <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="./index.css">
-     <!-- Link Swiper's CSS -->
-      <!-- Link Swiper's CSS -->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-  />
+   <!-- AOS ANIMATION -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- FONT AWESOME ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -60,10 +56,10 @@
         <h1>About Me</h1>
     </div>
        <div class="about-body">
-        <div class="about-pic">
+        <div class="about-pic" data-aos="fade-right">
             <lottie-player src="./images/118043-data-analytics-techniques.json" background="transparent"  speed="1"  style="width: 300px; height: 500px;" loop  autoplay></lottie-player>
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in" >
             <h2>Hey There! I'm Jane</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloremque modi eaque magnam facere voluptates repudiandae, maxime provident quos dicta vero possimus
                  fuga ex beatae doloribus dignissimos at dolorem libero!
@@ -81,7 +77,7 @@
                 <h1>My Skills</h1> 
             </div>
             <div class="skill-body">
-            <div class="skill-text">
+            <div class="skill-text" data-aos="zoom-in">
                <h2>My Skills and Experience</h2>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestias quasi fugiat dolorum iste totam architecto a, ullam maiores, iure ea dolorem, obcaecati voluptatum unde 
@@ -91,7 +87,7 @@
                </p>
                <button class="btn"> <a href=""> Read More </a></button>
             </div>
-            <div class="skill-pic">
+            <div class="skill-pic" data-aos="fade-right">
                 <div class="bar">
                     <div class="info">
                         <span>HTML</span>
@@ -218,42 +214,42 @@
             <h1>Projects</h1>
         </div>
         <div class="pro-all">
-            <div class="pro-img">
+            <div class="pro-img" data-aos="fade-right">
                 <img src="./images/Hire.png" alt="">
                 <p>A marketing website</p>
                 <div class="btny">
                 <button class="btno"><a href="">View the site</a></button>
             </div>
             </div>
-            <div>
+            <div data-aos="fade-right">
                 <img src="./images/Link.png" alt="">
                 <p>A link shortening website</p>
                <div class="btny">
                 <button class="btno"><a href="">View the site</a></button>
             </div>
             </div>
-            <div>
+            <div data-aos="fade-right">
                 <img src="./images/Makeup.png" alt="">
                 <p>A makeup site</p>
                 <div class="btny">
                 <button class="btno"><a href="">View the site</a></button>
             </div>
             </div>
-            <div>
+            <div data-aos="fade-right">
                 <img src="./images/Youtube.png" alt="">
                 <p>A weather app</p>
                 <div class="btny">
                 <button class="btno"><a href="">View the site</a></button>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-right">
                 <img src="./images/Proj1.png" alt="">
                 <p>React portfolio</p>
                 <div class="btny">
                 <button class="btno"><a href="">View the site</a></button>
             </div>
             </div>
-            <div>
+            <div data-aos="fade-right">
                 <img src="./images/Proj1.png" alt="">
                 <p>QR Generator</p>
                 <div class="btny">
@@ -273,7 +269,7 @@
         <div class="contact-title">
             <h1>Contact Me</h1>
         </div>
-        <div class="contact-card">
+        <div class="contact-card" data-aos="zoom-in">
             <div class="card1">
                 <h3>Address</h3>
                 <p>Ike Ekweremadu street, Independence Layout, Enugu</p>
@@ -290,7 +286,7 @@
                 <a href="mailto:ezikenkemdilijane@gmail.com">ezikenkemdilijane</a>
             </div>
         </div>
-        <div class="form">
+        <div class="form" data-aos="fade-down">
            <input type="text" placeholder="Name">
            <input type="email" placeholder="Email">
            <textarea name="" id="" cols="30" rows="10" placeholder="leave a message"></textarea> 
@@ -314,6 +310,15 @@
   
   
 <script src="./index.js"></script>
+<!-- AOS ANIMATION -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, 
+  });
+</script>
 <!-- lottie file -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body> 
