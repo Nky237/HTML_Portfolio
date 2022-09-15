@@ -113,19 +113,6 @@ li a:hover, li a:active{
 	}
 } 
 
-/* .btn{
-    margin-top: 60px;
-    height: 60px;
-    width: 170px;
-    background-color: #12D640;
-    border-radius: 15px;
-}
-.btn a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-   
-} */
 /* buttons */
 .btn{
     position: relative;
@@ -153,6 +140,30 @@ li a:hover, li a:active{
 }
 .btn:hover a{
     color: white;
+}
+
+.btny{
+text-align: center;
+}
+.btno{
+    margin-top: 10px;
+    height: 50px;
+    width: 140px;
+    background-color: #12D640;
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+}
+.btno:hover{
+    filter: grayscale(0);
+    transform: scale(1.15); 
+    background-color: purple;
+    color: white;
+}
+.btno a{
+    text-decoration: none;
+    color: #010E1B;
+    font-size: 18px;
+   
 }
 .icon{
     padding-top: 20px;
@@ -443,7 +454,7 @@ border-radius: 50%;
     justify-content: space-around;
 }
 .pro-all >div{
-    height: 200px;
+    height: 300px;
     width: 300px;
     border-radius: 22px;
 }
@@ -461,6 +472,13 @@ border-radius: 50%;
 .pro-all >div p{
     color: white;
     text-align: center;
+}
+.resume{
+    text-align: center;
+}
+.resume button{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /* FOOTER */
 footer{
@@ -493,7 +511,7 @@ body{
 .nav-menu{
     position: fixed;
     left: -100%;
-    top: 90px;
+    top: 80px;
     gap: 0;
     flex-direction: column;
     background-color: #010E1B;
@@ -533,7 +551,11 @@ flex-direction: column;
 
 #text {
     font-size: 27px;
+   
 }
+/* .intro{
+    padding-left: 20px;
+} */
 /* ABOUT */
 .about-body{
     display: flex;

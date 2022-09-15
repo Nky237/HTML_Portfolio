@@ -21,7 +21,7 @@ function myFunction() {
 // FOR THE BLINKING EFFECT
 // List of sentences
 var _CONTENT = [ 
-	"A front-end developer", 
+	"A frontend developer", 
 	"A backend developer", 
 	"Aspiring data analyst", 
 	"An Electronic Engineer"
