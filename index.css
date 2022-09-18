@@ -201,7 +201,14 @@ border-radius: 50%;
     line-height: 37px;
 }
 /* ABOUT SECTION */
-#about, #service, #contact {
+#about, #contact {
+   background-color: white;
+    color: black;
+    width: 100%;
+    padding-left: 40px;
+    
+}
+#service{
    background-color: white;
     color: black;
     width: 100%;
@@ -379,6 +386,9 @@ border-radius: 50%;
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 10px;
+}
+.service-text{
+    text-align: center;
 }
 
 /* contact secction */
@@ -605,6 +615,13 @@ padding-left: 20px;
     background-color: #010E1B;
     width: 100%;
   } 
+  #about, #contact {
+   padding-left: 40px;
+  }
+  #service{
+    padding-left: 20px;
+  }
+     
 /* INTRO */
 .intro{
     padding-top: 20px;
@@ -632,4 +649,9 @@ padding-left: 20px;
   .content{
     flex-direction: column;
   }
+}
+@media only screen and (max-width: 300px){
+  .card .card.reveal{
+    width: 60%;
+  }  
 }
