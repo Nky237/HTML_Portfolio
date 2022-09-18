@@ -594,7 +594,7 @@ padding-left: 20px;
     
 }
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:460px){
   /* body{
     overflow-x: hidden;
   }  */
@@ -605,8 +605,31 @@ padding-left: 20px;
     background-color: #010E1B;
     width: 100%;
   } 
-
+/* INTRO */
+.intro{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.intro h1{
+    line-height: 90px;
+}
+.intro-img img{
+    height: 250px;
+}
+.intro-img{
+    height: 250px;
+    margin: auto;
+    padding-top: 20px;
+}
   .card.reveal{
     width: 300px;
+  }
+
+  /* services */
+  .service-body{
+    margin: auto;
+  }
+  .content{
+    flex-direction: column;
   }
 }
