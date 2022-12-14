@@ -18,6 +18,7 @@ function myFunction() {
   }
 }
 
+
 // FOR THE BLINKING EFFECT
 // List of sentences
 var _CONTENT = [ 
@@ -108,3 +109,39 @@ Linky.forEach(n=> n.addEventListener('click', ()=>{
 	Navy.classList.remove("active")
 	Ham.classList.remove("active")
 }))
+
+
+// LOAD MORE BUTTON
+const parentContainer =  document.querySelector('.read');
+const parent = document.querySelector('.reado');
+
+parentContainer.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isReadMoreBtn = current.className.includes('Load');
+
+    if(!isReadMoreBtn) return;
+
+    const currentText = event.target.parentNode.querySelector('.loadMore');
+
+    currentText.classList.toggle('read-show');
+
+    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+
+})
+parent.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isReadMoreBtn = current.className.includes('Load');
+
+    if(!isReadMoreBtn) return;
+
+    const currentText = event.target.parentNode.querySelector('.loadMore');
+
+    currentText.classList.toggle('read-show');
+
+    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+
+})

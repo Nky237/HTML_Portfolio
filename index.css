@@ -7,7 +7,9 @@
     /* width: 100%; */
 
 }
-
+button{
+    border: none;
+}
 
 #navbar{
     width: 100%;
@@ -26,10 +28,10 @@ ul{
     width: 40%;
     justify-content: space-around;
 }
-li{
+#navbar li{
     list-style: none;
 }
-li a{
+#navbar li a{
     text-decoration: none;
     font-size: 23px;
     color: black;
@@ -37,7 +39,7 @@ li a{
     
    
 }
-li a:hover, li a:active{
+#navbar li a:hover,#navbar li a:active{
     /* text-decoration: underline;
     text-decoration-color: blue; */
     content: '';
@@ -504,7 +506,19 @@ footer{
     font-size: 30px;
     margin: 10px;
 }
-
+/* LOAD MORE BUTTON */
+.loadMore{
+    display: none;
+}
+.loadMore p, .loadMore li {
+    line-height: 37px;
+}
+button:hover{
+    color: white;
+}
+.read-show{
+    display: inline;
+}
 /* MEDIA QUERIES */
 
 /* Nav bar */
