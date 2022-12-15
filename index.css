@@ -543,6 +543,7 @@ body{
     text-align: center;
     transition: 0.3s;
     height: 100%;
+    color: white;
     
     
 
@@ -551,11 +552,11 @@ body{
     justify-content: space-evenly;
     
 }
-.nav-menu li a{
+#navbar .nav-menu li a{
     color: white;
     
 }
-.nav-menu li{
+#navbar .nav-menu li{
     margin: 10px 0;
 }
 .nav-menu.active{
