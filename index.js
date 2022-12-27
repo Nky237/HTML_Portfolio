@@ -145,3 +145,41 @@ parent.addEventListener('click', event=>{
     current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
 
 })
+
+
+// FORM VALIDATION
+let name =document.querySelector('.namy')
+let email =document.querySelector('.emaily')
+let error =document.querySelector('.danger')
+let errorName =document.querySelector('.Namedanger')
+let btn = document.querySelector('.form-btn')
+const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    btn.addEventListener('click', (e)=>{
+      if(name.value === ''){
+        errorName.innerHTML = 'Name is required';
+		name.style.borderColor = 'red'
+		name.focus()
+		e.preventDefault()
+    }
+	else{
+		errorName.innerHTML = ' ';
+		name.style.borderColor = 'green'
+		
+	  }
+    if(email.value === ''){
+        error.innerHTML = 'Email is required!';
+		email.style.borderColor = 'red'
+		email.focus()
+		e.preventDefault()
+    }
+    else if (!regex.test(email.value)) {
+      error.innerHTML = "This is not a valid email format!"
+	  e.preventDefault()
+  }
+  else{
+	error.innerHTML = ' ';
+	email.style.borderColor = 'green'
+	
+  }
+  
+    })

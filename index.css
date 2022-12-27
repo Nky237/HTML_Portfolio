@@ -436,9 +436,9 @@ border-radius: 50%;
 }
 .form input{
     height: 60px;
-    border-radius: 5px;
+    border-radius: 7px;
     width: 90%;
-    margin: auto;
+    margin: 4px auto;
     padding: 20px;
     font-size: 20px;
 }
@@ -518,6 +518,13 @@ button:hover{
 }
 .read-show{
     display: inline;
+}
+
+/* FORM VALIDATION */
+#err{
+    text-align: center;
+    color: red;
+    font-style: italic;
 }
 /* MEDIA QUERIES */
 
