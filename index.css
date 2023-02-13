@@ -279,73 +279,18 @@ border-radius: 50%;
 }
 .skill-pic{
     width: 40%;
+    border: 5px solid #12D640;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+   
 }
-.bar {
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.bar .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.bar .info span {
-    font-size: 18px;
-    font-weight: 500;
-}
-.bar .line {
-    position: relative;
+.skill-pic img{
     width: 100%;
-    height: 5px;
-    background: #999999;
-    border-radius: 2px;
-}
-
-.bar .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 2px;
-}
-
-.bar .html::before {
-    width: 95%;
-    background: #e45126;
-}
-
-.bar .css::before {
-    width: 85%;
-    background: #0c73b8;
-}
-
-.bar .javascript::before {
-    width: 80%;
-    background: #e3a324;
-}
-.bar .bootstrap::before{
-    width: 80%;
-    background-color: #12D640;
-}
-.bar .React::before{
-    width: 50%;
-    background-color: blueviolet;
-}
-.bar .python::before{
-    width: 50%;
-    background-color: blueviolet;
-}
-.bar .Github::before{
-    width: 90%;
-    background-color: #12D640;
-}
-.bar .Tailwind::before{
-    width: 70%;
-    background-color: brown;
+    object-fit: contain;
+    height: 250px;
+    padding-top: 30px;
+    
 }
 
 /* SERVICES */
