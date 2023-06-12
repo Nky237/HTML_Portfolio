@@ -424,7 +424,7 @@ ul {
 }
 .swiper-slide {
   min-height: 200px !important;
-  width: 350px !important;
+  /* width: 350px !important; */
   display: flex;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -663,7 +663,7 @@ button:hover {
 
   .swiper-slide {
     margin: 0;
-    width: 400px !important;
+    /* width: 400px !important; */
   }
 }
 @media only screen and (max-width: 300px) {
