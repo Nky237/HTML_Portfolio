@@ -69,7 +69,7 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: (6 1fr);
+  grid-template-rows: (4 1fr);
   padding-top: 90px;
   color: white;
   background-color: #010e1b;
@@ -629,6 +629,7 @@ button:hover {
   .swiper {
     background-color: #010e1b !important;
     width: 100% !important;
+    overflow-x: hidden;
   }
   #about {
     padding-left: 40px;
