@@ -455,6 +455,7 @@ ul {
 .pagy div {
   background-color: #12d640;
   font-size: 24px;
+  cursor: pointer;
 }
 .swiper-next {
   position: absolute;
