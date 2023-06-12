@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
   /* width: 100%; */
 }
-body{
+body {
   width: 100% !important;
 }
 button {
@@ -450,7 +450,6 @@ ul {
   transform: scale(1.15);
 }
 .pagy div {
-
   background-color: #12d640;
 }
 .swiper-button-next {
@@ -460,7 +459,6 @@ ul {
   padding: 30px 30px !important;
   border-radius: 50% !important;
   color: white !important;
-
 }
 .swiper-button-prev {
   position: absolute;
@@ -614,7 +612,7 @@ button:hover {
     width: 300px;
   }
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   /* body{
     overflow-x: hidden;
   }  */
@@ -624,9 +622,9 @@ button:hover {
   footer,
   .intro,
   #skill,
-  #projects {
-    background-color: #010e1b;
-    width: 100%;
+  .swiper {
+    background-color: #010e1b !important;
+    width: 100% !important;
   }
   #about {
     padding-left: 40px;
