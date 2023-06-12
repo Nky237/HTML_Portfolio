@@ -454,20 +454,29 @@ ul {
 }
 .pagy div {
   background-color: #12d640;
+  font-size: 24px;
 }
-.swiper-button-next {
+.swiper-next {
   position: absolute;
-  top: 60px !important;
+  top: 47px !important;
   right: 50% !important;
-  padding: 30px 30px !important;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50% !important;
   color: white !important;
 }
-.swiper-button-prev {
+.swiper-prev {
   position: absolute;
-  top: 60px !important;
+  top: 40px !important;
   left: 53% !important;
-  padding: 30px 30px !important;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50% !important;
   color: white !important;
 }

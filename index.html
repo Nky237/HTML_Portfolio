@@ -218,8 +218,12 @@
             </div>
              <!-- Add navigation buttons -->
 <div class="pagy">
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-next">
+            <i class="fa fa-arrow-left "></i>
+        </div>
+        <div class="swiper-prev">
+             <i class="fa fa-arrow-right "></i>
+        </div>
 </div>
     <div class="resume">
         <button class="btn"><a href="./images/resume.pdf"  download="resume">
@@ -302,8 +306,8 @@
        <script>
   var swiper = new Swiper(".mySwiper", {
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
     },
     breakpoints: {
       640: {
