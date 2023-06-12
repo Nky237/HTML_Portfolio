@@ -13,6 +13,12 @@
     <link rel="icon" type="image/x-icon" href="/images/log.jfif">
     <!-- FONT AWESOME ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
     <!-- NAVIGATION BAR -->
@@ -63,11 +69,11 @@
         </div>
         <div class="about-text read" data-aos="zoom-in" >
             <h2>Hey There! I'm Jane</h2>
-            <p>A graduate of Electronic Engineering and an innovative frontend developer. In
+            <p>Aate in communication.     graduate of Electronic Engineering and an innovative frontend developer. In
                 the course of the past one year, I have worked on a lot of projects and collaborated with a
                  lot of teams to build real life websites. I am always willing and ready to learn new things.
                 I am fully grounded on soft skills such as collaborative skill, critical thinking skill,
-                ability to solve problems and very adequate in communication.       
+                ability to solve problems and very adequ   
                 </p>
                 <div class="loadMore">
                    <p> I enjoy learning new skills and techniques of doing things. I also love working with
@@ -157,68 +163,73 @@
     </div>
     </div>
 
+    
+    </div>
     <!-- projects -->
-    <div id="projects">
+       
+        <div class="swiper mySwiper">
+             
         <div class="pro-title">
             <h1>Projects</h1>
         </div>
-        <div class="pro-all">
-            <div class="pro-img" data-aos="fade-right">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" >
                 <img src="./images/Hire.png" alt="">
                 <p>A marketing website</p>
                 <div class="btny">
                 <button class="btno"><a href="https://kodehire.netlify.app/" target="_blank">View the site</a></button>
             </div>
             </div>
-            <div data-aos="fade-right">
-                <img src="./images/Link.png" alt="">
-                <p>A link shortening website</p>
+            <div class="swiper-slide" >
+                <img src="./images/LMS.PNG" alt="">
+                <p>Learning Managemet System</p>
                <div class="btny">
-                <button class="btno"><a href="https://nky237.github.io/CH1-team-2/" target="_blank">View the site</a></button>
+                <button class="btno"><a href="https://learnz.vercel.app/" target="_blank">View the site</a></button>
             </div>
             </div>
-            <div data-aos="fade-right">
-                <img src="./images/blog (2).png" alt="">
-                <p>A blog</p>
-                <div class="btny">
-                <button class="btno"><a href="https://nky237.github.io/My_blog/" target="_blank">View the site</a></button>
-            </div>
-            </div>
-            <div data-aos="fade-right">
+            <div class="swiper-slide" >
                 <img src="./images/weather.png" alt="">
                 <p>A weather app</p>
                 <div class="btny">
                 <button class="btno"><a href="https://nky237.github.io/weather/index.html" target="_blank">View the site</a></button>
                 </div>
             </div>
-            <div data-aos="fade-right">
-                <img src="./images/port.png" alt="">
-                <p>React portfolio</p>
+            <div class="swiper-slide" >
+                <img src="./images/Diet.PNG" alt="">
+                <p>Diet Plan</p>
                 <div class="btny">
-                <button class="btno"><a href="https://my-portfolio-liard-pi.vercel.app/" target="_blank">View the site</a></button>
+                <button class="btno"><a href="https://diet-plan-app.vercel.app/" target="_blank">View the site</a></button>
             </div>
             </div>
-            <div data-aos="fade-right">
+            <div class="swiper-slide">
                 <img src="./images/QR.png" alt="">
                 <p>QR Generator</p>
                 <div class="btny">
                 <button class="btno"><a href="https://jhenna-qrgenerator.netlify.app/" target="_blank">View the site</a></button>
             </div>
             </div>
-            <div data-aos="fade-right">
+            <div class="swiper-slide" >
                 <img src="./images/sushi.png" alt="">
                 <p>React SushiApp</p>
                 <div class="btny">
                 <button class="btno"><a href="https://sushi-app-cyan.vercel.app/" target="_blank">View the site</a></button>
             </div>
             </div>
-        </div>
-       <div class="resume">
+            </div>
+             <!-- Add navigation buttons -->
+<div class="pagy">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+</div>
+    <div class="resume">
         <button class="btn"><a href="./images/resume.pdf"  download="resume">
             <i class="fa fa-download "></i>Download Resume
         </a></button>
     </div>
-    </div>
+            </div>
+            
+        
+       
     
     <!-- contacts -->
     <div id="contact">
@@ -280,5 +291,37 @@
 </script>
 <!-- lottie file -->
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<!-- Include the SwiperJS library -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Add the JavaScript code to initialize the swiper -->
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+       <!-- Swiper JS -->
+       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+       <script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 5,
+      },
+    },
+  });
+</script>
+
+	
 </body> 
 </html>
